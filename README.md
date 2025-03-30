@@ -8,10 +8,12 @@ The first model studied is the static weight - we find the **best** $\lambda >0$
 
 Static Weight on MNIST:
 ![image](https://github.com/user-attachments/assets/426e7a98-671c-4c72-a562-94b8a80ea300)
+
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via StaticWeight**]
 
 Static Weight on Faces:
 ![image](https://github.com/user-attachments/assets/73c2fd2d-4d48-4a5f-92c8-54632844448c)
+
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via StaticWeight**]
 
 The next model is the model proposed in the original paper, the quadratic model. This is essentially a higher-dimensional version of the above model where we learna positive semi-definite matrix $A$ and our regularisation strangth for the ith noisy image $\xi_i$ is $\lambda = \xi^* A \xi$
@@ -29,14 +31,17 @@ where $\Phi^{(x,y)}$ is a positive semidefinite matrix that we seek to optimise.
 
 DSAwPCA on MNIST (test set):
 ![image](https://github.com/user-attachments/assets/043aba25-6e53-489d-bebf-233d827e48f5)
+
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via DSAwPCA**]
 
 DSAwSCPA on MNST (test set):
 ![image](https://github.com/user-attachments/assets/f4244c71-486a-4a4d-b9fb-2cfd0bca06fd)
+
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via DSAwSPCA**]
 
 DSAwPCA on Faces (test set):
 ![image](https://github.com/user-attachments/assets/aded4b07-4906-4a93-b242-e1b47c6816ed)
+
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via DSAwPCA**]
 
 DSAwSPCA on Faces (test set):
@@ -45,8 +50,10 @@ DSAwSPCA on Faces (test set):
 
 Below is an example of slices of the tensor we are optimising over. In the future I wish to find a way of interpreting these - I tried to find a relationship between the noisy image, the operator norm of each tensor slice and the corresponding principal image but there didn't seem to be ay relationship.
 ![image](https://github.com/user-attachments/assets/c002d671-68b6-42d7-a629-b1fb09091f19)
+
 [**PSD Hyperparameters**]
 ![image](https://github.com/user-attachments/assets/8bfce8a3-18f9-461d-b02d-191e8e772eb9)
+
 [**Found EigenFaces**]
 
 
