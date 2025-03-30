@@ -19,7 +19,7 @@ $$\lambda(\xi) = \sum_{i,j = 1}^n \Lambda_{ij}|\nabla \xi (i,j)|_2$$
 [image]
 
 Then finally we study using a more advanced model, DSAwPCA/DSAwSPCA. These both compute dimensionality reduction of the training set of images (either via vanilla PCA or Sparse PCA) to get an image of dimension $p^2$, with each entry corresponing to a principal component. Let $L$ be the dimensionality reduction map, with $L^{(i,j)}$ the projection map onto the $i,k$th component. Then our regularisation strength takes the form
-$$\lambda = \sum_{i = 1}$$
+$$\lambda =\sum_{x,y = 1}^{s^2} (L\xi)^* \Phi^{(x,y)} (L\xi) ||\nabla (L^{(i,j)}\xi)(x,y)||_2$$
 
 DSAwPCA on MNIST (test set):
 ![image](https://github.com/user-attachments/assets/043aba25-6e53-489d-bebf-233d827e48f5)
