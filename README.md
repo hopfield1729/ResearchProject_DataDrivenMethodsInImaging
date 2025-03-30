@@ -7,11 +7,13 @@ This clearly requires apriori knowledge of $\lambda$ before we solve. In my rese
 The first model studied is the static weight - we find the **best** $\lambda >0$ for all images (of the same dimension) and solve a monolevel proxy problem that allows for solving for the best hyperparameter. Below are some results of this model:
 
 Static Weight on MNIST:
+
 ![image](https://github.com/user-attachments/assets/426e7a98-671c-4c72-a562-94b8a80ea300)
 
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via StaticWeight**]
 
 Static Weight on Faces:
+
 ![image](https://github.com/user-attachments/assets/73c2fd2d-4d48-4a5f-92c8-54632844448c)
 
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via StaticWeight**]
@@ -52,6 +54,7 @@ Below is an example of slices of the tensor we are optimising over. In the futur
 ![image](https://github.com/user-attachments/assets/c002d671-68b6-42d7-a629-b1fb09091f19)
 
 [**PSD Hyperparameters**]
+
 ![image](https://github.com/user-attachments/assets/8bfce8a3-18f9-461d-b02d-191e8e772eb9)
 
 [**Found EigenFaces**]
