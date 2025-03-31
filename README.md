@@ -8,7 +8,7 @@ The first model studied is the static weight - we find the **best** $\lambda >0$
 
 Static Weight on MNIST:
 
-![image](https://github.com/user-attachments/assets/426e7a98-671c-4c72-a562-94b8a80ea300)
+![image](https://github.com/user-attachments/assets/b71acf56-2524-460f-80dd-8f42b23966f8)
 
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via StaticWeight**]
 
