@@ -38,7 +38,7 @@ SAw on Faces:
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via SAw**]
 
 Then finally we study using a more advanced model, DSAwPCA/DSAwSPCA. These both compute dimensionality reduction of the training set of images (either via vanilla PCA or Sparse PCA) to get an image of dimension $p^2$, with each entry corresponing to a principal component. Let $L$ be the dimensionality reduction map, with $L^{(i,j)}$ the projection map onto the $i,k$th component. Then our regularisation strength takes the form
-$$\lambda =\sum_{x,y = 1}^{s^2} (L\xi)^* \Phi^{(x,y)} (L\xi) ||\nabla (L^{(i,j)}\xi)(x,y)||_2$$
+$$\lambda =\sum_{x,y = 1}^{s^2} (L\xi)^* \Phi^{(x,y)} (L\xi) |\nabla (L^{(x,y)}\xi)|_2$$
 where $\Phi^{(x,y)}$ is a positive semidefinite matrix that we seek to optimise. More specifically for each principal image component found during PCA we have a corresponding $\Phi^{(.,.)}$ and thus we are actually optimising over all tensors that have positive semidefinite matrices as its components. Below are some results:
 
 DSAwPCA on MNIST (test set):
