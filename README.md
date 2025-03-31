@@ -42,16 +42,19 @@ $$\lambda =\sum_{x,y = 1}^{s^2} (L\xi)^* \Phi^{(x,y)} (L\xi) ||\nabla (L^{(i,j)}
 where $\Phi^{(x,y)}$ is a positive semidefinite matrix that we seek to optimise. More specifically for each principal image component found during PCA we have a corresponding $\Phi^{(.,.)}$ and thus we are actually optimising over all tensors that have positive semidefinite matrices as its components. Below are some results:
 
 DSAwPCA on MNIST (test set):
+
 ![image](https://github.com/user-attachments/assets/043aba25-6e53-489d-bebf-233d827e48f5)
 
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via DSAwPCA**]
 
 DSAwSCPA on MNST (test set):
+
 ![image](https://github.com/user-attachments/assets/f4244c71-486a-4a4d-b9fb-2cfd0bca06fd)
 
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via DSAwSPCA**]
 
 DSAwPCA on Faces (test set):
+
 ![image](https://github.com/user-attachments/assets/aded4b07-4906-4a93-b242-e1b47c6816ed)
 
 [**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via DSAwPCA**]
