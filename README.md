@@ -25,8 +25,17 @@ The next model is the model proposed in the original paper, the quadratic model.
 We then investiage a spatially aware model (SAw). This is a model of the form 
 $$\lambda(\xi) = \sum_{i,j = 1}^n \Lambda_{ij}|\nabla \xi (i,j)|_2$$
 
+SAw on MNIST:
 
-[image]
+![image](https://github.com/user-attachments/assets/15c938a9-d90b-4a98-809f-98fec591ea4d)
+
+[**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via SAw**]
+
+SAw on Faces:
+
+![image](https://github.com/user-attachments/assets/a31e02c7-4f66-438f-8ed2-cf9baffd79de)
+
+[**LEFT: True, MIDDLE: Noisy, RIGHT: Denoised via SAw**]
 
 Then finally we study using a more advanced model, DSAwPCA/DSAwSPCA. These both compute dimensionality reduction of the training set of images (either via vanilla PCA or Sparse PCA) to get an image of dimension $p^2$, with each entry corresponing to a principal component. Let $L$ be the dimensionality reduction map, with $L^{(i,j)}$ the projection map onto the $i,k$th component. Then our regularisation strength takes the form
 $$\lambda =\sum_{x,y = 1}^{s^2} (L\xi)^* \Phi^{(x,y)} (L\xi) ||\nabla (L^{(i,j)}\xi)(x,y)||_2$$
