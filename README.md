@@ -20,8 +20,6 @@ Static Weight on Faces:
 
 The next model is the model proposed in the original paper, the quadratic model. This is essentially a higher-dimensional version of the above model where we learna positive semi-definite matrix $A$ and our regularisation strangth for the ith noisy image $\xi_i$ is $\lambda = \xi^* A \xi$
 
-[image]
-
 We then investiage a spatially aware model (SAw). This is a model of the form 
 $$\lambda(\xi) = \sum_{i,j = 1}^n \Lambda_{ij}|\nabla \xi (i,j)|_2$$
 
