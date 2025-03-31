@@ -25,6 +25,7 @@ The next model is the model proposed in the original paper, the quadratic model.
 We then investiage a spatially aware model (SAw). This is a model of the form 
 $$\lambda(\xi) = \sum_{i,j = 1}^n \Lambda_{ij}|\nabla \xi (i,j)|_2$$
 
+
 [image]
 
 Then finally we study using a more advanced model, DSAwPCA/DSAwSPCA. These both compute dimensionality reduction of the training set of images (either via vanilla PCA or Sparse PCA) to get an image of dimension $p^2$, with each entry corresponing to a principal component. Let $L$ be the dimensionality reduction map, with $L^{(i,j)}$ the projection map onto the $i,k$th component. Then our regularisation strength takes the form
